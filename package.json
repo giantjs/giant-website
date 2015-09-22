@@ -1,0 +1,23 @@
+{
+  "name": "giantjs.org",
+  "version": "0.0.7",
+  "description": "Website for Giant",
+  "keywords": [
+    "giant",
+    "giantjs",
+    "website"
+  ],
+  "author": "Dan Stocker <dan@kwaia.com>",
+  "copyright": "Copyright (c) 2015 Dan Stocker",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:giantjs/giantjs.org.git"
+  },
+  "devDependencies": {
+    "grocer": "^0.5.0",
+    "grunt": "^0.4.5",
+    "grunt-ftp-deploy": "^0.1.10",
+    "grunt-markdown": "^0.7.0"
+  }
+}
