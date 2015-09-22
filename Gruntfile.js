@@ -21,10 +21,28 @@ module.exports = function (grunt) {
                     ext   : '.html'
                 }],
 
-                options: {}
+                options: {
+                    template: 'src/templates/main.html',
+                    contextBinder: true,
+                    contextBinderMark: '@@@'
+                }
             }
         })
         .setPackageName('grunt-markdown')
+        .addToCollection(multiTasks);
+
+    'copy'
+        .toMultiTask({
+            'default': {
+                files: [{
+                    expand: true,
+                    cwd   : 'src',
+                    src   : '**/*.css',
+                    dest  : 'public'
+                }]
+            }
+        })
+        .setPackageName('grunt-contrib-copy')
         .addToCollection(multiTasks);
 
     'ftp-deploy'
@@ -42,19 +60,21 @@ module.exports = function (grunt) {
         .setPackageName('grunt-ftp-deploy')
         .addToCollection(multiTasks);
 
-    //'build'
-    //    .toAliasTask()
-    //    .addSubTasks('karma', 'concat')
-    //    .addToCollection(gruntTasks);
+    'build'
+        .toAliasTask()
+        .addSubTasks('markdown:default', 'copy:default')
+        .addToCollection(gruntTasks);
+
+    'deploy'
+        .toAliasTask()
+        .addSubTasks('ftp-deploy:default')
+        .addToCollection(gruntTasks);
 
     // registering tasks
-    //
-    //
-    //    .mergeWith(gruntTasks)
-
     multiTasks.toGruntConfig()
         .applyConfig()
         .getAliasTasksGroupedByTarget()
         .mergeWith(multiTasks.toGruntTaskCollection())
+        .mergeWith(gruntTasks)
         .applyTask();
 };

@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body > section {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#menu {
+    height: 50px;
+    background-color: blue;
+}
+
+#header {
+    height: 150px;
+    background-color: red;
+}
+
+#content {
+    background-color: yellow;
+}
+
+#footer {
+    height: 50px;
+    background-color: green;
+}
