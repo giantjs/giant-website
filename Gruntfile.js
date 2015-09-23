@@ -22,9 +22,16 @@ module.exports = function (grunt) {
                 }],
 
                 options: {
-                    template: 'src/templates/main.html',
-                    contextBinder: true,
-                    contextBinderMark: '@@@'
+                    template         : 'src/templates/main.html',
+                    preCompile       : function (src, context) {
+                        context.currentYear = new Date().getFullYear();
+                    },
+                    contextBinder    : true,
+                    contextBinderMark: '@@@',
+                    markdownOptions  : {
+                        gfm   : true,
+                        tables: true
+                    }
                 }
             }
         })
@@ -39,6 +46,11 @@ module.exports = function (grunt) {
                     cwd   : 'src',
                     src   : '**/*.css',
                     dest  : 'public'
+                }, {
+                    expand: true,
+                    cwd   : '.',
+                    src   : 'images/*',
+                    dest  : 'public'
                 }]
             }
         })
@@ -49,12 +61,12 @@ module.exports = function (grunt) {
         .toMultiTask({
             'default': {
                 auth: {
-                      host: 'ftp.giantjs.org',
-                      port: 21,
-                      authKey: 'giantjso'
-                    },
-                    src: 'public',
-                    dest: 'www'
+                    host   : 'ftp.giantjs.org',
+                    port   : 21,
+                    authKey: 'giantjso'
+                },
+                src : 'public',
+                dest: 'www'
             }
         })
         .setPackageName('grunt-ftp-deploy')

@@ -1,0 +1,14 @@
+#content > h2 {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+#content > h2 + p {
+    display: inline-block;
+    margin-top: 0;
+    line-height: 20px;
+    vertical-align: top;
+    float: right;
+    font-size: 12px;
+}

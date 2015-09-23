@@ -1,17 +1,33 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <title><%=title%></title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/<%=page%>.css">
 </head>
 <body>
-<section id="menu"></section>
-<section id="header">
-    <h1><%=title%></h1>
+<section id="menu">
+    <h1 id="giantLabel"><a href="index.html">GiantJS</a></h1>
+    <ul id="menu-items">
+        <li id="menu-home"><a href="index.html">Home</a></li>
+        <li id="menu-blog"><a href="blog.html">Blog</a></li>
+        <li id="menu-manual"><a class="disabled" href="#">Manual</a></li>
+        <li id="menu-api"><a class="disabled" href="#">API</a></li>
+        <li id="menu-log"><a class="disabled" href="#">Change log</a></li>
+    </ul>
 </section>
 <section id="content">
     <%=content%>
 </section>
-<section id="footer"></section>
+<section id="footer">
+    <p>©2011-<%=currentYear%> Dan Stocker</p>
+    <ul id="links-items">
+        <li id="links-twitter"><a href="//twitter.com/giantjsorg"></a></li>
+        <li id="links-npm"><a href="//npmjs.com/~giantjs"></a></li>
+        <li id="links-github"><a href="//github.com/giantjs"></a></li>
+    </ul>
+</section>
 </body>
 </html>
