@@ -1,6 +1,9 @@
-body {
+/* https://www.materialpalette.com/light-blue/grey */
+
+html, body {
     padding: 0;
     margin: 0;
+    font-family: Roboto, sans-serif;
 }
 
 body > section {
@@ -10,19 +13,22 @@ body > section {
 
 #menu {
     height: 50px;
-    background-color: blue;
+    color: #FFFFFF;
+    background-color: #0288D1;
 }
 
 #header {
     height: 150px;
-    background-color: red;
+    color: #FFFFFF;
+    background-color: #03A9F4;
 }
 
 #content {
-    background-color: yellow;
+    color: #212121;
+    background-color: #FFFFFF;
 }
 
 #footer {
     height: 50px;
-    background-color: green;
+    background-color: #0288D1;
 }
