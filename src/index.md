@@ -7,8 +7,10 @@
   *adjective*
   
   1. of very great size or extent; huge or enormous: *that gigantic codebase was over 100kloc*
-  2. built with the front end framework "Giant"
-  
+  2. built with the front end framework "GiantJS"
+
+GiantJS is in alpha. Breaking changes may occur frequently.
+
 Features
 --------
 

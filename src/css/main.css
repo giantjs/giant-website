@@ -125,6 +125,10 @@ body > section {
     font-size: 14px;
 }
 
+#footer > p {
+    float: left;
+}
+
 #links-items {
     float: right;
 }

@@ -35,6 +35,12 @@
 
 /* features */
 
+#content > ul + p {
+    margin-top: 2em;
+    color: red;
+    text-align: center;
+}
+
 #content #features + ul {
     display: table;
 }
@@ -58,25 +64,25 @@
     margin-bottom: 5px;
     padding: 5px;
     font-size: 16px;
-    color: #FFFFFF;    
+    color: #FFFFFF;
     background-color: #727272;
 }
 
-#content #features + ul > li:nth-child(1) strong {    
+#content #features + ul > li:nth-child(1) strong {
     background-color: #E91E63;
 }
 
-#content #features + ul > li:nth-child(2) strong {    
+#content #features + ul > li:nth-child(2) strong {
     background-color: #9C27B0;
 }
 
-#content #features + ul > li:nth-child(3) strong {    
+#content #features + ul > li:nth-child(3) strong {
     background-color: #2196F3;
 }
 
 /* development status */
 
-#content table {    
+#content table {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
