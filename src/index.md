@@ -1,7 +1,7 @@
 <!-- @@@page:index@@@ -->
 <!-- @@@title:GiantJS@@@ -->
 
-- ![GiantJS logo](images/GiantJSLogo.png)
+- ![GiantJS logo](images/giantjs-logo.png)
 - **gigantic** /dʒʌɪˈɡantɪk/
  
   *adjective*
@@ -14,15 +14,15 @@ Features
 
 - **Rich**
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Covers all major aspects of modern web applications.
 
 - **Flexible**
 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Doesn't force you to use functionality you don't need.
 
 - **Productive**
 
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Allows your application to grow fast.
   
 Development status
 ------------------
@@ -41,7 +41,6 @@ Development status
 | giant-boilerplate | Application boilerplate | planned
 | giant-cli | Application building tools | planned
 | giant-data | Basic data structures | 100%
-| giant-developer-guide | Developer guide | 1%
 | giant-entity | Entity framework | 100%
 | giant-event | Universal events | 100%
 | giant-i18n | Internationalization | 95%
