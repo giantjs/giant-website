@@ -77,7 +77,7 @@ body > section {
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    color: #727272;
+    color: #212121;
     background-color: #FFFFFF;
     font-weight: 300;
 }
@@ -90,12 +90,24 @@ body > section {
     margin-top: 1em;
 }
 
+#content a {
+    text-decoration: underline;
+}
+
+#content a:hover {
+    text-decoration: none;
+}
+
 #content > h2 {
     color: #03A9F4;
     margin-top: 2em;
 }
 
 #content > h3 {
+    color: #9E9E9E;
+}
+
+#content strong {
     color: #0288D1;
 }
 
