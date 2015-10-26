@@ -1,0 +1,3 @@
+[submodule "developer-guide"]
+	path = developer-guide
+	url = git@github.com:giantjs/giant-developer-guide.git
