@@ -43,6 +43,7 @@
 
 #content #features + ul {
     display: table;
+    padding: 0;
 }
 
 #content #features + ul > li {

@@ -19,12 +19,22 @@ module.exports = function (grunt) {
                     src   : '**/*.md',
                     dest  : 'public',
                     ext   : '.html'
+                }, {
+                    expand: true,
+                    cwd   : 'developer-guide/src',
+                    src   : '**/*.md',
+                    dest  : 'public',
+                    ext   : '.html'
                 }],
 
                 options: {
                     template         : 'src/templates/main.html',
                     preCompile       : function (src, context) {
+                        // setting current year in footer
                         context.currentYear = new Date().getFullYear();
+
+                        // replacing extensions
+                        return src.replace('.md', '.html');
                     },
                     contextBinder    : true,
                     contextBinderMark: '@@@',
