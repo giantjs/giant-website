@@ -1,6 +1,9 @@
 <!-- @@@page:index@@@ -->
 <!-- @@@title:GiantJS@@@ -->
 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
 - ![GiantJS logo](images/giantjs-logo.png)
 - **gigantic** /dʒʌɪˈɡantɪk/
  
@@ -8,6 +11,10 @@
   
   1. of very great size or extent; huge or enormous: *that gigantic codebase was over 100kloc*
   2. built with the front end framework "GiantJS"
+
+
+- <a href="https://twitter.com/giantjsorg" class="twitter-follow-button" data-show-count="false">Follow @giantjsorg</a>  
+- <iframe src="https://ghbtns.com/github-btn.html?user=giantjs&repo=giant&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
 
 GiantJS is in alpha. Breaking changes may occur frequently.
 
