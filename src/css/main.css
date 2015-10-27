@@ -1,4 +1,4 @@
-/* https://www.materialpalette.com/light-blue/grey */
+/* https://www.materialpalette.com/light-blue/blue-grey */
 
 html, body {
     height: 100%;
@@ -24,6 +24,11 @@ h2 {
 a {
     text-decoration: none;
     color: #0288D1;
+}
+
+code {
+    font-family: Roboto Mono, monospace;
+    color: #607D8B;
 }
 
 .disabled {
@@ -99,12 +104,18 @@ body > section {
 }
 
 #content > h2 {
-    color: #03A9F4;
+    background-color: #03A9F4;
+    color: #FFFFFF;
     margin-top: 1em;
+    padding: 0.3em;
+}
+
+#content > h2 code {
+    color: #B3E5FC;
 }
 
 #content > h3 {
-    color: #9E9E9E;
+    color: #212121;
 }
 
 #content strong {
