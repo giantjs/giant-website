@@ -11,39 +11,69 @@ module.exports = function (grunt) {
         .setGruntObject(grunt);
 
     'markdown'
-        .toMultiTask({
-            'default': {
-                files: [{
-                    expand: true,
-                    cwd   : 'src',
-                    src   : '**/*.md',
-                    dest  : 'public',
-                    ext   : '.html'
-                }, {
-                    expand: true,
-                    cwd   : 'developer-guide/src',
-                    src   : '**/*.md',
-                    dest  : 'public',
-                    ext   : '.html'
-                }],
+        .toMultiTask(function () {
+            var tocHtml = {};
 
-                options: {
-                    template         : 'src/templates/main.html',
-                    preCompile       : function (src, context) {
-                        // setting current year in footer
-                        context.currentYear = new Date().getFullYear();
+            return {
+                toc: {
+                    files: [{
+                        expand: true,
+                        cwd   : 'developer-guide/src/toc',
+                        src   : '*.md',
+                        dest  : 'public',
+                        ext   : '.html'
+                    }],
 
-                        // replacing extensions
-                        return src.replace('.md', '.html');
-                    },
-                    contextBinder    : true,
-                    contextBinderMark: '@@@',
-                    markdownOptions  : {
-                        gfm   : true,
-                        tables: true
+                    options: {
+                        template         : 'src/templates/fragment.html',
+                        preCompile       : function (src) {
+                            // replacing extensions
+                            return src.replace(/\.md/g, '.html');
+                        },
+                        postCompile      : function (src, context) {
+                            tocHtml[context.page] = src;
+                        },
+                        contextBinder    : true,
+                        contextBinderMark: '@@@'
+                    }
+                },
+
+                'default': {
+                    files: [{
+                        expand: true,
+                        cwd   : 'src',
+                        src   : '*.md',
+                        dest  : 'public',
+                        ext   : '.html'
+                    }, {
+                        expand: true,
+                        cwd   : 'developer-guide/src',
+                        src   : '*.md',
+                        dest  : 'public',
+                        ext   : '.html'
+                    }],
+
+                    options: {
+                        template         : 'src/templates/main.html',
+                        preCompile       : function (src, context) {
+                            // setting current year in footer
+                            context.currentYear = new Date().getFullYear();
+
+                            // replacing extensions
+                            return src.replace(/\.md/g, '.html');
+                        },
+                        postCompile      : function (src, context) {
+                            return [tocHtml[context.page], src].join('\n');
+                        },
+                        contextBinder    : true,
+                        contextBinderMark: '@@@',
+                        markdownOptions  : {
+                            gfm   : true,
+                            tables: true
+                        }
                     }
                 }
-            }
+            };
         })
         .setPackageName('grunt-markdown')
         .addToCollection(multiTasks);
@@ -84,7 +114,7 @@ module.exports = function (grunt) {
 
     'build'
         .toAliasTask()
-        .addSubTasks('markdown:default', 'copy:default')
+        .addSubTasks('markdown:toc', 'markdown:default', 'copy:default')
         .addToCollection(gruntTasks);
 
     'deploy'
