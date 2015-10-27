@@ -26,52 +26,48 @@ Features
 
   Allows your application to grow fast.
   
-Development status
-------------------
+Roadmap
+-------
 
 **The goal is to get to version 1.0 by the end of 2015.** The figures below indicate how close each module is to that, in terms of feature-readiness. (Not including documentation.) Version 1.0 will be released when all modules in the first table stand at 100%.
 
-### Core modules (initial release)
+### Initial release
 
-| Module name | Description | Progress
-|:------------|:------------|----------:
-| **giant** | Framework umbrella package | 100%
-| giant-assertion | Extensible assertions | 80%
-| giant-asset | Asset management | 50%
-| giant-basic-widgets | Basic widgets | planned
-| giant-behaviors | Common class behaviors | planned
-| giant-boilerplate | Application boilerplate | planned
-| giant-cli | Application building tools | planned
-| giant-data | Basic data structures | 100%
-| giant-entity | Entity framework | 100%
-| giant-event | Universal events | 100%
-| giant-i18n | Internationalization | 95%
-| giant-routing | Routing | 100%
-| giant-oop | OOP & testing tools | 100%
-| giant-table | Indexed tables | 100%
-| giant-templating | String templating | 90%
-| giant-transport | Transport layer | 80%
-| giant-utils | General utility classes | 90%
-| giant-widget | Widget framework | 90%
+| Module name | Tier | Description | Progress
+|:------------|:-----|:------------|----------:
+| **giant** | N/A | Framework umbrella package | 100%
+| **giant-development** | N/A | Framework contribution tools | 100%
+| giant-project-boilerplate | N/A | Project boilerplate | planned
+| giant-module-boilerplate | N/A | Module boilerplate | planned
+| giant-assertion | essentials | Extensible assertions | 80%
+| giant-behaviors | essentials | Common class behaviors | planned
+| giant-data | essentials | Basic data structures | 100%
+| giant-event | essentials | Universal events | 100%
+| giant-oop | essentials | OOP & testing tools | 100%
+| giant-table | essentials | Indexed tables | 100%
+| giant-templating | essentials | String templating | 90%
+| giant-utils | essentials | General utility classes | 90%
+| giant-entity | core | Entity framework | 100%
+| giant-i18n | core | Internationalization | 95%
+| giant-routing | core | Routing | 100%
+| giant-rest | core | REST API access | planned
+| giant-widget | core | Widget framework | 90%
+| giant-cli | auxiliary | Application building tools | planned
+| giant-asset | auxiliary | Asset management | 90%
+| giant-basic-widgets | auxiliary | Basic widgets | planned
+| giant-common-widgets | obsolete | Commonly used widgets | N/A
+| giant-transport | obsolete | Transport layer | N/A
 
-### Core modules (subsequent releases)
+### To be released later
 
-| Module name | Description | Progress
-|:------------|:------------|---------:
-| giant-automation | Batch scripting tools | planned
-| giant-logging | Logging | planned
-| giant-offline | Offline entity persistence | planned
-| giant-session | User session management | planned
-
-### Extension modules
-
-To be released independently from the framework.
-
-| Module name | Description | Progress
-|:------------|:------------|---------:
-| giant-cli-tools | CLI building tools | 30%
-| **giant-development** | Framework contribution tools | 100%
-| giant-diagnostic-widgets | Runtime diagnostic tools | planned
-| giant-ga-tools | Google Analytics integration | planned
-| giant-grunt-tools | [Grunt](http://gruntjs.com/) integration | planned
-| giant-material-widgets | Widgets based on [Google Material Design](https://www.google.com/design/spec/material-design) | planned
+| Module name | Tier | Description | Progress
+|:------------|:-----|:------------|---------:
+| giant-session | core | User session management | planned
+| giant-automation | auxiliary | Batch scripting tools | planned
+| giant-cli-tools | auxiliary | CLI building tools | 30%
+| giant-diagnostic-widgets | auxiliary | Runtime diagnostic tools | planned
+| giant-ga-tools | auxiliary | Google Analytics integration | planned
+| giant-grunt-tools | auxiliary | [Grunt](http://gruntjs.com/) integration | 80%
+| giant-logging | auxiliary | Logging | planned
+| giant-material-widgets | auxiliary | Widgets based on [Google Material Design](https://www.google.com/design/spec/material-design) | planned
+| giant-offline | auxiliary | Offline entity persistence | planned
