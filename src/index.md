@@ -25,14 +25,14 @@ Features
 
   Covers all major aspects of modern web applications.
 
-- **Flexible**
+- **Modular**
 
   Doesn't force you to use functionality you don't need.
 
 - **Productive**
 
   Allows your application to grow fast.
-  
+
 Roadmap
 -------
 
