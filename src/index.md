@@ -16,7 +16,9 @@
 - <a href="https://twitter.com/giantjsorg" class="twitter-follow-button" data-show-count="false">Follow @giantjsorg</a>  
 - <iframe src="https://ghbtns.com/github-btn.html?user=giantjs&repo=giant&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
 
-Giant is a full-featured framework for building complex, modern, snappy [single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPAs). Giant targets large, enterprise-grade projects, ensuring maintainable, steady growth towards and beyond hundreds of thousands of lines of code.
+GiantJS is a full-featured, modular framework for building complex, modern Single-Page Applications. It targets multi-platform, enterprise-grade projects, stimulating unlimited, steady growth.
+
+The purpose of GiantJS is to give developers a *single, coherent system* with recurring practices and patterns, serving as a solid foundation to a *wide variety* of applications.
 
 Features
 --------
