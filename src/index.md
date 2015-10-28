@@ -33,6 +33,21 @@ Features
 
   Allows your application to grow fast.
 
+Who's using it
+--------------
+
+- **[Production Minds Platform](https://pmp.productionminds.com)**
+
+  Online collaboration system for the film industry, based on an earlier version of GiantJS.
+
+  ![The Production Minds Platform](https://raw.githubusercontent.com/giantjs/giantjs.org/master/images/pmp.png)
+  
+- **[Mangahigh.com](https://mangahigh.com/login)**
+
+  Math education platform.
+
+  ![Mangahigh.com](https://raw.githubusercontent.com/giantjs/giantjs.org/master/images/mangahigh.png)
+
 Roadmap
 -------
 

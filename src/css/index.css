@@ -97,6 +97,41 @@
     background-color: #2196F3;
 }
 
+/* who's using it' */
+
+#content #who-s-using-it + ul {
+    display: table;
+    padding: 0;
+}
+
+#content #who-s-using-it + ul > li {
+    display: table-cell;
+    width: 50%;
+    padding-right: 20px;
+}
+
+#content #who-s-using-it + ul > li:last-child {
+    padding-right: 0;
+}
+
+#content #who-s-using-it + ul > li > p:nth-child(1) {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #03A9F4;
+}
+
+#content #who-s-using-it + ul > li > p:nth-child(1) a {
+    color: #FFFFFF;
+}
+
+#content #who-s-using-it + ul > li > p:nth-child(2) {
+    height: 60px;
+    font-size: 14px;
+}
+
 /* development status */
 
 #content table {
