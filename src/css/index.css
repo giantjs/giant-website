@@ -49,13 +49,13 @@
     display: inline-block;
 }
 
-/* features */
+/* intro */
 
 #content > ul + p {
-    margin-top: 2em;
-    color: red;
-    text-align: center;
+    font-size: 18px;
 }
+
+/* features */
 
 #content #features + ul {
     display: table;
@@ -110,6 +110,10 @@
     padding-right: 20px;
 }
 
+#content #who-s-using-it + ul > li img {
+    height: 200px;
+}
+
 #content #who-s-using-it + ul > li:last-child {
     padding-right: 0;
 }
@@ -128,11 +132,15 @@
 }
 
 #content #who-s-using-it + ul > li > p:nth-child(2) {
-    height: 60px;
+    height: 50px;
     font-size: 14px;
 }
 
-/* development status */
+#content #who-s-using-it + ul > li > p:nth-child(3) {
+    text-align: center;
+}
+
+/* readmap */
 
 #content table {
     width: 80%;
@@ -162,4 +170,10 @@
 
 #content td {
     font-size: 14px;
+}
+
+#content > p:last-child {
+    margin-top: 2em;
+    color: red;
+    text-align: center;
 }

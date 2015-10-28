@@ -16,7 +16,7 @@
 - <a href="https://twitter.com/giantjsorg" class="twitter-follow-button" data-show-count="false">Follow @giantjsorg</a>  
 - <iframe src="https://ghbtns.com/github-btn.html?user=giantjs&repo=giant&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
 
-GiantJS is in alpha. Breaking changes may occur frequently.
+Giant is a full-featured framework for building complex, modern, snappy [single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPAs). Giant targets large, enterprise-grade projects, ensuring maintainable, steady growth towards and beyond hundreds of thousands of lines of code.
 
 Features
 --------
@@ -93,3 +93,5 @@ Roadmap
 | giant-logging | auxiliary | Logging | planned
 | giant-material-widgets | auxiliary | Widgets based on [Google Material Design](https://www.google.com/design/spec/material-design) | planned
 | giant-offline | auxiliary | Offline entity persistence | planned
+
+GiantJS is in alpha. Frequent breaking changes may occur.
