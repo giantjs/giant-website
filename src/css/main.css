@@ -27,8 +27,11 @@ a {
 }
 
 code {
+    display: inline-block;
     font-family: Roboto Mono, monospace;
     color: #607D8B;
+    background-color: #F0F0F0;
+    padding: 0 0.2em;
 }
 
 .disabled {
@@ -104,10 +107,10 @@ body > section {
 }
 
 #content > h2 {
-    background-color: #B3E5FC;
-    color: #0288D1;
-    margin-top: 1em;
-    padding: 0.3em;
+    color: #000000;
+    margin-top: 2em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #B6B6B6;
 }
 
 #content > h3 {
