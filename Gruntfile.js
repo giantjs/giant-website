@@ -16,13 +16,15 @@ module.exports = function (grunt) {
 
             return {
                 toc: {
-                    files: [{
-                        expand: true,
-                        cwd   : 'developer-guide/src/toc',
-                        src   : '*.md',
-                        dest  : 'public',
-                        ext   : '.html'
-                    }],
+                    files: [
+                        {
+                            expand: true,
+                            cwd   : 'developer-guide/src/toc',
+                            src   : '*.md',
+                            dest  : 'public',
+                            ext   : '.html'
+                        }
+                    ],
 
                     options: {
                         template         : 'src/templates/fragment.html',
@@ -39,19 +41,21 @@ module.exports = function (grunt) {
                 },
 
                 'default': {
-                    files: [{
-                        expand: true,
-                        cwd   : 'src',
-                        src   : '*.md',
-                        dest  : 'public',
-                        ext   : '.html'
-                    }, {
-                        expand: true,
-                        cwd   : 'developer-guide/src',
-                        src   : '*.md',
-                        dest  : 'public',
-                        ext   : '.html'
-                    }],
+                    files: [
+                        {
+                            expand: true,
+                            cwd   : 'src',
+                            src   : '*.md',
+                            dest  : 'public',
+                            ext   : '.html'
+                        }, {
+                            expand: true,
+                            cwd   : 'developer-guide/src',
+                            src   : '*.md',
+                            dest  : 'public',
+                            ext   : '.html'
+                        }
+                    ],
 
                     options: {
                         template         : 'src/templates/main.html',
@@ -68,8 +72,9 @@ module.exports = function (grunt) {
                         contextBinder    : true,
                         contextBinderMark: '@@@',
                         markdownOptions  : {
-                            gfm   : true,
-                            tables: true
+                            gfm      : true,
+                            highlight: 'manual',
+                            tables   : true
                         }
                     }
                 }
@@ -81,17 +86,23 @@ module.exports = function (grunt) {
     'copy'
         .toMultiTask({
             'default': {
-                files: [{
-                    expand: true,
-                    cwd   : 'src',
-                    src   : '**/*.css',
-                    dest  : 'public'
-                }, {
-                    expand: true,
-                    cwd   : '.',
-                    src   : 'images/*',
-                    dest  : 'public'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        cwd   : 'src',
+                        src   : '**/*.css',
+                        dest  : 'public'
+                    }, {
+                        expand: true,
+                        cwd   : '.',
+                        src   : 'images/*',
+                        dest  : 'public'
+                    }, {
+                        cwd   : '.',
+                        src   : 'node_modules/grunt-markdown/node_modules/highlight.js/styles/vs.css',
+                        dest  : 'public/css/highlight.css'
+                    }
+                ]
             }
         })
         .setPackageName('grunt-contrib-copy')
