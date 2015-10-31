@@ -3,12 +3,18 @@ module.exports = function (grunt) {
     "use strict";
 
     var grocer = require('grocer'),
-        packageNode = require('./package.json'),
         multiTasks = [].toMultiTaskCollection(),
         gruntTasks = [].toGruntTaskCollection();
 
     grocer.GruntProxy.create()
         .setGruntObject(grunt);
+
+    'clean'
+        .toMultiTask({
+            'default': 'public/'
+        })
+        .setPackageName('grunt-contrib-clean')
+        .addToCollection(multiTasks);
 
     'markdown'
         .toMultiTask(function () {
@@ -98,14 +104,32 @@ module.exports = function (grunt) {
                         src   : 'images/*',
                         dest  : 'public'
                     }, {
-                        cwd   : '.',
-                        src   : 'node_modules/grunt-markdown/node_modules/highlight.js/styles/vs.css',
-                        dest  : 'public/css/highlight.css'
+                        cwd : '.',
+                        src : 'node_modules/grunt-markdown/node_modules/highlight.js/styles/vs.css',
+                        dest: 'public/css/highlight.css'
                     }
                 ]
             }
         })
         .setPackageName('grunt-contrib-copy')
+        .addToCollection(multiTasks);
+
+    'string-replace'
+        .toMultiTask({
+            'ga': {
+                options: {
+                    replacements: [{
+                        pattern    : '<!--GA-->',
+                        replacement: grunt.file.read('./src/templates/ga.html')
+                    }]
+                },
+                files  : [{
+                    src : 'public/*.html',
+                    dest: 'public/'
+                }]
+            }
+        })
+        .setPackageName('grunt-string-replace')
         .addToCollection(multiTasks);
 
     'ftp-deploy'
@@ -123,14 +147,21 @@ module.exports = function (grunt) {
         .setPackageName('grunt-ftp-deploy')
         .addToCollection(multiTasks);
 
-    'build'
+    'build-dev'
         .toAliasTask()
-        .addSubTasks('markdown:toc', 'markdown:default', 'copy:default')
+        .addSubTasks(
+        'clean',
+        'markdown:toc', 'markdown:default', 'copy:default')
+        .addToCollection(gruntTasks);
+
+    'build-prod'
+        .toAliasTask()
+        .addSubTasks('clean', 'markdown:toc', 'markdown:default', 'copy:default', 'string-replace:ga')
         .addToCollection(gruntTasks);
 
     'deploy'
         .toAliasTask()
-        .addSubTasks('ftp-deploy:default')
+        .addSubTasks('build-prod', 'ftp-deploy:default')
         .addToCollection(gruntTasks);
 
     // registering tasks
