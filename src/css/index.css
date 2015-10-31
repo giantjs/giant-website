@@ -107,12 +107,12 @@
 
 #content #who-s-using-it + ul > li {
     display: table-cell;
-    width: 50%;
+    width: 33%;
     padding-right: 20px;
 }
 
 #content #who-s-using-it + ul > li img {
-    height: 200px;
+    max-height: 200px;
 }
 
 #content #who-s-using-it + ul > li:last-child {
@@ -133,7 +133,7 @@
 }
 
 #content #who-s-using-it + ul > li > p:nth-child(2) {
-    height: 50px;
+    height: 3em;
     font-size: 14px;
 }
 

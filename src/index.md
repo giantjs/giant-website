@@ -38,11 +38,17 @@ Features
 Who's using it
 --------------
 
-- **[Production Minds Platform](https://pmp.productionminds.com)**
+- **[Production Minds](https://pmp.productionminds.com)**
 
-  Online collaboration system for the film industry, based on an earlier version of GiantJS.
+  Online collaboration system for the film industry.
 
   ![The Production Minds Platform](https://raw.githubusercontent.com/giantjs/giantjs.org/master/images/pmp.png)
+
+- **[In The Window™](https://thewindow.com)**
+
+  Social platform for designers.
+
+  ![In The Window™](https://raw.githubusercontent.com/giantjs/giantjs.org/master/images/in-the-window.png)
   
 - **[Mangahigh.com](https://mangahigh.com/login)**
 
