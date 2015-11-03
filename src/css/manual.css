@@ -7,8 +7,13 @@
     position: absolute;
     left: 0;
     width: 120px;
-    line-height: 2em;
+    line-height: 1.5em;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+#content > ol:nth-child(1) del {
+    text-decoration: none;
+    color: #B6B6B6;
 }
