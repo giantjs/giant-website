@@ -93,12 +93,36 @@ body > section {
     font-weight: 300;
 }
 
-#content > p,
-#content > ul,
-#content > table,
-#content > h3,
-#content > h4 {
+#content > h2 {
+    margin-top: 2em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #B6B6B6;
+    color: #000000;
+}
+
+#content > h1 + * {
+    margin-top: 36px;
+}
+
+#content > h2 + * {
+    margin-top: 24px;
+}
+
+#content > h3 {
     margin-top: 1em;
+    color: #212121;
+}
+
+#content > h3 + * {
+    margin-top: 18px;
+}
+
+#content > p + * {
+    margin-top: 1em;
+}
+
+#content strong {
+    color: #0288D1;
 }
 
 #content a {
@@ -107,21 +131,6 @@ body > section {
 
 #content a:hover {
     text-decoration: underline;
-}
-
-#content > h2 {
-    color: #000000;
-    margin-top: 2em;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #B6B6B6;
-}
-
-#content > h3 {
-    color: #212121;
-}
-
-#content strong {
-    color: #0288D1;
 }
 
 #content blockquote {
