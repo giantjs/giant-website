@@ -39,8 +39,8 @@ Features
 
   Designed to run in both browser & Node.
 
-Who's using it
---------------
+Who's using it?
+---------------
 
 - **[Production Minds](https://pmp.productionminds.com)**
 
