@@ -23,7 +23,7 @@ The purpose of GiantJS is to give developers a *single, coherent system* with re
 Features
 --------
 
-- **Rich**
+- **Complete**
 
   Covers all major aspects of modern web applications.
 
@@ -31,9 +31,13 @@ Features
 
   Doesn't force you to use functionality you don't need.
 
-- **Productive**
+- **Scalable**
 
   Allows your application to grow fast.
+
+- **Isomorphic**
+
+  Designed to run in both browser & Node.
 
 Who's using it
 --------------
