@@ -140,7 +140,7 @@
     padding-right: 0;
 }
 
-#content #who-s-using-it- + ul > li > p:nth-child(1) {
+#content #who-s-using-it- + ul h3 {
     display: block;
     margin-bottom: 5px;
     padding: 5px;
@@ -149,7 +149,7 @@
     background-color: #03a9f4;
 }
 
-#content #who-s-using-it- + ul > li > p:nth-child(1) a {
+#content #who-s-using-it- + ul h3 a {
     color: #ffffff;
 }
 
