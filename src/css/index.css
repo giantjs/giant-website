@@ -70,33 +70,48 @@
     margin: 0 5% 20px 0;
 }
 
-#content #features + ul > li:nth-child(3) {
+#content #features + ul > li:nth-child(3),
+#content #features + ul > li:nth-child(6),
+#content #features + ul > li:nth-child(9) {
     margin-right: 0;
 }
 
-#content #features + ul > li p {
+#content #features + ul p {
     font-size: 14px;
 }
 
-#content #features + ul > li strong {
+#content #features + ul h3 {
     display: block;
     margin-bottom: 5px;
     padding: 5px;
     font-size: 16px;
-    color: #FFFFFF;
-    background-color: #727272;
+    color: #ffffff;
+    background-color: #b6b6b6;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-#content #features + ul > li:nth-child(1) strong {
-    background-color: #E91E63;
+#content #features + ul #complete {
+    background-color: #4caf50;
 }
 
-#content #features + ul > li:nth-child(2) strong {
-    background-color: #9C27B0;
+#content #features + ul #modular,
+#content #features + ul #extensible {
+    background-color: #8bc34a;
 }
 
-#content #features + ul > li:nth-child(3) strong {
-    background-color: #2196F3;
+#content #features + ul #object-oriented,
+#content #features + ul #coherent,
+#content #features + ul #scalable {
+    background-color: #cddc39;
+}
+
+#content #features + ul #evented,
+#content #features + ul #isomorphic {
+    background-color: #ffeb3b;
+}
+
+#content #features + ul #data-driven {
+    background-color: #ffc107;
 }
 
 /* who's using it' */
@@ -130,12 +145,12 @@
     margin-bottom: 5px;
     padding: 5px;
     font-size: 16px;
-    color: #FFFFFF;
-    background-color: #03A9F4;
+    color: #ffffff;
+    background-color: #03a9f4;
 }
 
 #content #who-s-using-it- + ul > li > p:nth-child(1) a {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 #content #who-s-using-it- + ul > li > p:nth-child(2) {

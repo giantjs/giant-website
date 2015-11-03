@@ -23,21 +23,41 @@ The purpose of GiantJS is to give developers a *single, coherent system* with re
 Features
 --------
 
-- **Complete**
+- ### Complete
 
   Covers all major aspects of modern web applications.
 
-- **Modular**
+- ### Modular
 
   Doesn't force you to use functionality you don't need.
 
-- **Scalable**
+- ### Scalable
 
   Allows your application to grow fast.
 
-- **Isomorphic**
+- ### Extensible
+
+  Can be tailored to the application.
+
+- ### Coherent
+
+  Uses the same recurring patterns across modules.
+
+- ### Isomorphic
 
   Designed to run in both browser & Node.
+  
+- ### Object-oriented
+
+  Built on a flexible, prototype-based, custom class system.
+
+- ### Evented
+
+  De-couples components via universal, bubbling events.
+
+- ### Data-driven
+
+  Maintains application state in a central datastore.
 
 Who's using it?
 ---------------
