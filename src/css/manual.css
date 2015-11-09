@@ -22,6 +22,9 @@
 #content #entities:after {
     background-position: -240px -240px;
 }
+#content #universal-events:after {
+    background-position: 0 -240px;
+}
 
 #content > ol:nth-child(1) {
     position: absolute;
