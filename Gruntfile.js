@@ -3,10 +3,11 @@ module.exports = function (grunt) {
     "use strict";
 
     var $asset = require('giant-asset'),
+        $gruntTools = require('giant-grunt-tools'),
         multiTasks = [].toMultiTaskCollection(),
         gruntTasks = [].toGruntTaskCollection();
 
-    $asset.GruntProxy.create()
+    $gruntTools.GruntProxy.create()
         .setGruntObject(grunt);
 
     'clean'
