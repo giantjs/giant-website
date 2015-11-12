@@ -2,11 +2,11 @@
 module.exports = function (grunt) {
     "use strict";
 
-    var grocer = require('grocer'),
+    var $asset = require('giant-asset'),
         multiTasks = [].toMultiTaskCollection(),
         gruntTasks = [].toGruntTaskCollection();
 
-    grocer.GruntProxy.create()
+    $asset.GruntProxy.create()
         .setGruntObject(grunt);
 
     'clean'
