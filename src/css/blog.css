@@ -3,20 +3,14 @@
 }
 
 #content > h2 {
-    position: relative;
-    z-index: 0;
-    box-sizing: border-box;
+    margin-bottom: 0;
 }
 
 #content > h2 + p {
-    position: absolute;
-    z-index: 1;
-    top: 20px;
-    right: 20px;
-    height: 36px;
-    line-height: 36px;
-    padding: 0;
-    margin: 0 1em 0 0;
-    box-sizing: border-box;
+    height: 2em;
+    line-height: 2em;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: right;
     font-size: 12px;
 }
