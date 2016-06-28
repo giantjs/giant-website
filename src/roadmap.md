@@ -4,7 +4,7 @@
 Roadmap
 =======
 
-**The goal is to get to version 1.0 by the end of 2015.** The figures below indicate how close each module is to that, in terms of feature-readiness. (Not including documentation.) Version 1.0 will be released when all modules in the first table stand at 100%.
+The figures below indicate how close each module is to that, in terms of feature-readiness. (Not including documentation.) Version 1.0 will be released when all modules in the first table stand at 100%.
 
 ### Initial release
 
@@ -29,7 +29,7 @@ Roadmap
 | giant-widget | core | Widget framework | 90%
 | giant-cli | auxiliary | Application building tools | planned
 | giant-asset | auxiliary | Asset management | 90%
-| giant-basic-widgets | auxiliary | Basic widgets | planned
+| giant-basic-widgets | auxiliary | Basic widgets | 40%
 | giant-common-widgets | obsolete | Commonly used widgets | N/A
 | giant-transport | obsolete | Transport layer | N/A
 
