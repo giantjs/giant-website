@@ -1,6 +1,17 @@
 <!-- @@@page:blog@@@ -->
 <!-- @@@title:GiantJS Blog@@@ -->
 
+Meetup talk video
+-----------------
+
+*7 Jul 2016*
+
+The introductory talk I gave at the [JS Monthly London](http://www.meetup.com/js-monthly-london/) meetup got recorded and the video is now [available](https://blog.pusher.com/giant-js-full-featured-front-end-framework/).
+
+Many thanks to [@GuyNesher](https://twitter.com/GuyNesher), and the JS Monthly London meetup for the opportunity, and to [@Pusher](https://twitter.com/pusher) for the recording.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WGzUL_Sf264" frameborder="0" allowfullscreen></iframe>
+
 Upcoming meetup talk about GiantJS
 ----------------------------------
 
