@@ -1,6 +1,17 @@
 <!-- @@@page:blog@@@ -->
 <!-- @@@title:GiantJS Blog@@@ -->
 
+I18n talk at FEL
+----------------
+
+*20 Jul 2016*
+
+New meetup talk scheduled for 27 July: [Internationalization in Single Page Applications](http://www.meetup.com/Front-Endgineers-London/events/232560264/), at the "Front Endgineers London" meetup, touching on various *i18n* technologies and tools, including Giant.
+
+Organized by [RecWorks](http://www.recworks.co.uk/), hosted by [Skills Matter](https://skillsmatter.com/).
+
+Please RSVP at [Skills Matter](https://skillsmatter.com/meetups/8272-front-endgineers-meetup).
+
 Meetup talk video
 -----------------
 
