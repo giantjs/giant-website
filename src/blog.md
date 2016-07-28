@@ -1,6 +1,18 @@
 <!-- @@@page:blog@@@ -->
 <!-- @@@title:GiantJS Blog@@@ -->
 
+Meetup talk video
+-----------------
+
+*28 Jul 2016*
+
+[Video](https://skillsmatter.com/skillscasts/8442-internationalization-in-single-page-applications)
+ available for the *Internationalization in SPAs* talk I gave at the [Front Endgineers London](http://www.meetup.com/Front-Endgineers-London/) meetup group at SkillsMatter CodeNode.
+
+Many thanks to [@RecWorks](https://twitter.com/RecWorks) for organizing the event, and [@skillsmatter](https://twitter.com/skillsmatter) for hosting and recording it!
+
+Also check out the [slides](https://drive.google.com/open?id=1qG6WYomhzOjLGetmSRLgun0dcwClkwq9T9IoXRYgCqw) and the [code used in the demo](https://github.com/danstocker/talk-fel-i18n-spa).
+
 I18n talk at FEL
 ----------------
 
