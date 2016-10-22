@@ -4,47 +4,58 @@
 Roadmap
 =======
 
-The figures below indicate how close each module is to that, in terms of feature-readiness. (Not including documentation.) Version 1.0 will be released when all modules in the first table stand at 100%.
+As GiantJS aims to cover all aspects of modern web applications, it's constantly growing, adding new modules. This page summarizes the current state of available and planned modules.
 
-### Initial release
+### Stable modules
 
-| Module name | Tier | Description | Progress
+These modules are not expected to break existing API.
+
+They also cover the basics for building apps, with the exception of backend API access. (For that, you may still use the deprecated `giant-transport` module. Its replacement, `giant-rest`, is going to have a similar API.)
+
+
+| Module name | Tier | Description | Stability
 |:------------|:-----|:------------|----------:
-| **giant** | N/A | Framework umbrella package | 100%
-| **giant-development** | N/A | Framework contribution tools | 100%
-| giant-project-boilerplate | N/A | Project boilerplate | planned
-| giant-module-boilerplate | N/A | Module boilerplate | planned
-| giant-assertion | essentials | Extensible assertions | 80%
-| giant-behaviors | essentials | Common class behaviors | planned
-| giant-data | essentials | Basic data structures | 100%
-| giant-event | essentials | Universal events | 100%
-| giant-oop | essentials | OOP & testing tools | 100%
-| giant-table | essentials | Indexed tables | 100%
-| giant-templating | essentials | String templating | 90%
-| giant-utils | essentials | General utility classes | 90%
-| giant-entity | core | Entity framework | 100%
-| giant-i18n | core | Internationalization | 95%
-| giant-routing | core | Routing | 100%
-| giant-rest | core | REST API access | planned
-| giant-widget | core | Widget framework | 90%
-| giant-cli | auxiliary | Application building tools | planned
-| giant-asset | auxiliary | Asset management | 90%
-| giant-basic-widgets | auxiliary | Basic widgets | 40%
-| giant-common-widgets | obsolete | Commonly used widgets | N/A
-| giant-transport | obsolete | Transport layer | N/A
+| giant-assertion | essentials | Extensible assertions | STABLE
+| giant-data | essentials | Basic data structures | STABLE
+| giant-event | essentials | Universal events | STABLE
+| giant-oop | essentials | OOP & testing tools | STABLE
+| giant-table | essentials | Indexed tables | STABLE
+| giant-templating | essentials | String templating | STABLE
+| giant-utils | essentials | General utility classes | STABLE
+| giant-entity | core | Entity framework | STABLE
+| giant-i18n | core | Internationalization | STABLE
+| giant-routing | core | Routing | STABLE
+| giant-widget | core | Widget framework | STABLE
+| giant-basic-widgets | auxiliary | Basic widgets | FAIRLY STABLE
 
-### To be released later
+### Modules in progress
 
-| Module name | Tier | Description | Progress
+| Module name | Tier | Description | Stability
 |:------------|:-----|:------------|---------:
-| giant-session | core | User session management | planned
-| giant-automation | auxiliary | Batch scripting tools | planned
-| giant-cli-tools | auxiliary | CLI building tools | 30%
-| giant-diagnostic-widgets | auxiliary | Runtime diagnostic tools | planned
-| giant-ga-tools | auxiliary | Google Analytics integration | planned
-| giant-grunt-tools | auxiliary | [Grunt](http://gruntjs.com/) integration | 80%
-| giant-logging | auxiliary | Logging | planned
-| giant-material-widgets | auxiliary | Widgets based on [Google Material Design](https://www.google.com/design/spec/material-design) | planned
-| giant-offline | auxiliary | Offline entity persistence | planned
+| giant-project-boilerplate | N/A | Project boilerplate | UNSTABLE
+| giant-module-boilerplate | N/A | Module boilerplate | UNSTABLE
+| giant-cli | auxiliary | Application building tools | UNSTABLE
+| giant-asset | auxiliary | Asset management | UNSTABLE
+| giant-cli-tools | auxiliary | CLI building tools | UNSTABLE
+| giant-grunt-tools | auxiliary | [Grunt](http://gruntjs.com/) integration | UNSTABLE
 
-GiantJS is in alpha. Frequent breaking changes may occur.
+### Planned modules
+
+| Module name | Tier | Description | Stability
+|:------------|:-----|:------------|---------:
+| giant-behaviors | essentials | Common class behaviors | N/A
+| giant-rest | core | REST API access | N/A
+| giant-session | core | User session management | N/A
+| giant-automation | auxiliary | Batch scripting tools | N/A
+| giant-diagnostic-widgets | auxiliary | Runtime diagnostic tools | N/A
+| giant-ga-tools | auxiliary | Google Analytics integration | N/A
+| giant-logging | auxiliary | Logging | N/A
+| giant-material-widgets | auxiliary | Widgets based on [Google Material Design](https://www.google.com/design/spec/material-design) | N/A
+| giant-offline | auxiliary | Offline entity persistence | N/A
+
+### Deprecated modules
+
+| Module name | Tier | Description | Stability
+|:------------|:-----|:------------|---------:
+| giant-common-widgets | obsolete | Commonly used widgets | DEPRECATED
+| giant-transport | obsolete | Transport layer | DEPRECATED
