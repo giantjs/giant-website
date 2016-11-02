@@ -94,7 +94,18 @@ module.exports = function (grunt) {
         .toMultiTask({
             'default': {
                 files: [
+                    // framework dependencies
                     {
+                        expand: true,
+                        cwd   : 'node_modules',
+                        src   : [
+                            '**/giant-*.js',
+                            '**/giant-*.css',
+                            '**/dist/jquery.js'
+                        ],
+                        dest  : 'public/lib/',
+                        flatten: true
+                    }, {
                         expand: true,
                         cwd   : 'src',
                         src   : '**/*.css',
