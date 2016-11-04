@@ -16,6 +16,10 @@
     background-position: 360px 360px;
 }
 
+#content h1 + table tr > *:not(:last-child) {
+    padding-right: 5px;
+}
+
 #content #oop:after {
     background-position: -120px -240px;
 }

@@ -93,7 +93,7 @@ body > section {
     font-weight: 300;
 }
 
-#content > h2 {
+#content h2 {
     margin-top: 36px;
     margin-bottom: 24px;
     padding-bottom: 5px;
@@ -101,11 +101,11 @@ body > section {
     color: #000000;
 }
 
-#content > h1 {
+#content h1 {
     margin-bottom: 36px;
 }
 
-#content > h3 {
+#content h3 {
     margin-top: 1em;
     margin-bottom: 18px;
     color: #212121;
