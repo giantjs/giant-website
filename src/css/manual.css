@@ -20,6 +20,11 @@
     padding-right: 5px;
 }
 
+#content del {
+    text-decoration: none;
+    color: #B6B6B6;
+}
+
 #content #oop:after {
     background-position: -120px -240px;
 }
@@ -38,9 +43,4 @@
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-#content > ol:nth-child(1) del {
-    text-decoration: none;
-    color: #B6B6B6;
 }
