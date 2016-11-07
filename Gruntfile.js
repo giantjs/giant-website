@@ -117,7 +117,7 @@ module.exports = function (grunt) {
                         dest  : 'public'
                     }, {
                         cwd : '.',
-                        src : 'node_modules/grunt-markdown/node_modules/highlight.js/styles/vs.css',
+                        src : 'node_modules/highlight.js/styles/vs.css',
                         dest: 'public/css/highlight.css'
                     }
                 ]
