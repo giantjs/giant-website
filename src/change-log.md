@@ -4,6 +4,26 @@
 Change log
 ==========
 
+v0.4.0
+------
+
+*22 Nov 2016*
+
+### Breaking changes
+
+- Renames `$transport.Throttler` to `$transport.MultiThrottler`
+- Renames `String#toThrottler()` to `String#toMultiThrottler` 
+- Methods `$utils.Async.setTimeout` & `$utils.Async.setInterval` no longer take a callback.
+
+### Other changes
+
+- Adds `$utils.Throttler`, and (adds back) `String#toThrottler()`
+- Adds `$data.Dictionary#forEachItem()` for iterating over key-value pairs of the dictionary.
+- Adds extra checks to `$oop.Base#addPrivate()` to exclude methods.
+- Adds support for npm linking. Cli command `giant link` will link up all modules to development versions.
+- Upgrades tests to run with PhantomJs 2.1
+- Various bugfixes
+
 v0.3.0
 ------
 
